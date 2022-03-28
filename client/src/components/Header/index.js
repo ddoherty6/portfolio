@@ -1,10 +1,10 @@
 import Navgation from '../Navigation';
 
-function Header() {
+function Header({ nav, setNav }) {
     return (
         <header>
-            <h1> Dan Doherty</h1>
-            <Navgation />
+            <div><h1> Dan Doherty</h1></div>
+            <Navgation nav={nav} setNav={setNav}/>
         </header>
     );
 }

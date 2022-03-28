@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,301 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+:root {
+  --blue-gray: #394155;
+  --powder-blue: #67d0e2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stylebox { /*found throughout the page*/
+    background-color: var(--powder-blue);
+    color: var(--blue-gray);
+    align-items: center;
+} 
+
+header {
+    background-color: var(--blue-gray);
+    color: var(--powder-blue);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+header .stylebox {
+  padding-left: 4%;
+  width: 25%;
+  height: 80%;
+  display: flex;
+  align-content: center;
+}
+
+header .stylebox h1 {
+  font-size: 40px;
+  text-align: end;
+  flex: 1 30%;
+}
+
+header nav {
+    display: flex;
+    font-size: 26px;
+}
+
+header nav .nav-item {
+    margin: 20px;
+    border-bottom: 5px solid var(--powder-blue);
+    padding: 10px;
+}
+
+header nav .nav-item a {
+  text-decoration: none;
+  color: var(--powder-blue);
+}
+
+.hero {
+  background-image: url('./assets/images/jeremy-bishop-iftBhUFfecE-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  height: 200px;
+}
+
+.hero::after { /*using pseudo-element to position tagline in the hero*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero .stylebox {
+  position: absolute;
+  right: 2%;
+  top: 220px;
+  font-size: 36px;
+}
+
+main {
+  display: flex;
+  margin: 50px 100px 50px 0px;
+}
+
+.indent {
+  width: 25%;
+  color: var(--blue-gray);
+  font-size: 46px;
+  border-right: 5px solid var(--blue-gray);
+  text-align: end;  
+  padding-right: 10px;
+  margin-right: 15px;
+}
+
+.bio {
+  width: 75%;
+  color: var(--blue-gray);
+  font-size: 26px;
+  display: flex;
+}
+
+.bio img {
+  border: 5px solid var(--powder-blue);
+  margin: 1%;
+}
+
+.bio p {
+  margin: 1%;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.work article {
+  margin: 1%;
+  border: 5px solid var(--powder-blue);
+  position: relative;
+}
+
+
+.work article .stylebox {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  font-size: 36px;
+  z-index: 5;
+}
+
+.work article .stylebox h4 {
+  font-size: 36px;
+}
+
+.work article .stylebox p {
+  font-size: 20px;
+}
+
+.work .work-lg {
+  height: 400px;
+  width: 100%;       
+}
+
+.work .work-sm {
+  width: 48%;
+  height: 150px;
+}
+
+.work-lg img {
+  height: 100%;
+  width: 100%;
+  background-image: url('./assets/images/silas-baisch-OCzvgBqCJKY-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .7;
+}
+
+.work-sm img {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+}
+
+article img:hover {
+  opacity: 1;
+}
+
+
+footer {
+display: flex;
+margin: 20px 100px 20px 0px;
+color: var(--blue-gray);
+}
+
+footer .contact-info {
+width: 75%;
+display: flex;
+justify-content: space-around;
+font-size: 26px;
+}
+
+footer .contact-info .contact-item {
+margin: 20px;
+border-bottom: 5px solid var(--blue-gray);
+padding: 10px;
+display: flex;
+align-items: center;
+}
+
+footer .contact-info .contact-item a {
+text-decoration: none;
+color: var(--blue-gray);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+header .stylebox h1 {
+  font-size: 30px;
+}
+
+main {
+  display: block;
+  margin: 50px 10px 50px 10px;
+}
+
+.indent {
+  width: 100%;
+  color: var(--blue-gray);
+  font-size: 46px;
+  border-right: white;
+  border-bottom: 5px solid var(--blue-gray);
+  padding-right: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.bio {
+  width: 100%;
+}
+
+.work {
+  width: 100%;
+}
+
+footer {
+  display: block;
+  margin: 20px 10px 20px 10px;
+  color: var(--blue-gray);
+}
+
+footer .contact-info {
+  width: 100%;
+}
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+header {
+  display: block;
+  height: 175px;
+}
+
+header .stylebox {
+  height: 50%;
+  width: 50%;
+}
+
+header .stylebox h1 {
+  font-size: 40px;
+}
+
+header nav {
+  font-size: 20px;
+}
+
+.bio {
+  display: block;
+  text-align: center;
+}
+
+.work .work-sm {
+  width: 100%;
+}
+
+footer .contact-info {
+  display: block;
+}
+
+footer .contact-info .contact-item {
+  width: 50%;
+}
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+header {
+  height: 400px;
+}
+
+header .stylebox {
+  height: 25%;
+}
+
+header nav {
+  display: block;
+  text-align: center;
+}
+
+.hero .stylebox {
+  top: 500px;
+}
 }
