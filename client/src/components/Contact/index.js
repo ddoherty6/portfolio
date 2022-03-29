@@ -1,11 +1,11 @@
 function Contact() {
     return (
-        <footer>
+        <form id="contact">
             <ul>
                 <li>COntact</li>
                 <li>My guy</li>
             </ul>
-        </footer>
+        </form>
     );
 }
 

@@ -12,7 +12,7 @@ function Footer() {
                     <div><a href="tel: 6178238674">617.823.8674</a></div>
                 </div>
                 <div className="contact-item">
-                    <div><a href="mailto: ddoherty6@gmail.com">Email</a></div>
+                    <div><a href="mailto: ddoherty6@gmail.com">ddoherty6@gmail.com</a></div>
                 </div>
                 <div className="contact-item">
                     <div><a href="https://github.com/ddoherty6">GitHub</a></div>

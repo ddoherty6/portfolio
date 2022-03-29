@@ -21,10 +21,11 @@ code {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-radius: 5%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .stylebox { /*found throughout the page*/
@@ -40,6 +41,7 @@ header {
     justify-content: space-between;
     height: 100px;
     align-items: center;
+    border-radius: 5%;
 }
 
 header .stylebox {
@@ -72,13 +74,13 @@ header nav .nav-item a {
   color: var(--powder-blue);
 }
 
-.hero {
+/* .hero {
   background-image: url('./assets/images/jeremy-bishop-iftBhUFfecE-unsplash.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
   height: 200px;
-}
+} */
 
 .hero::after { /*using pseudo-element to position tagline in the hero*/
   width: 100%;
@@ -91,6 +93,7 @@ header nav .nav-item a {
   right: 2%;
   top: 220px;
   font-size: 36px;
+  display: none;
 }
 
 main {
@@ -118,6 +121,7 @@ main {
 .bio img {
   border: 5px solid var(--powder-blue);
   margin: 1%;
+  background-image: url('./assets/images/jeremy-bishop-iftBhUFfecE-unsplash.jpg');
 }
 
 .bio p {
@@ -166,15 +170,14 @@ main {
 .work-lg img {
   height: 100%;
   width: 100%;
-  background-image: url('./assets/images/silas-baisch-OCzvgBqCJKY-unsplash.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  object-fit: cover;
   opacity: .7;
 }
 
 .work-sm img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   opacity: .7;
 }
 
@@ -182,6 +185,19 @@ article img:hover {
   opacity: 1;
 }
 
+a:link {
+  text-decoration: none;
+  color:var(--blue-gray);
+}
+
+a:visited {
+  text-decoration: none;
+  color:var(--blue-gray);
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 footer {
 display: flex;
@@ -304,7 +320,7 @@ header nav {
   text-align: center;
 }
 
-.hero .stylebox {
-  top: 500px;
+.hero {
+  display: none;
 }
 }

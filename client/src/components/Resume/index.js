@@ -1,7 +1,7 @@
 function Resume() {
    
     return (
-        <main>
+        <main id="resume">
             <ul>
                 <li>resi</li>
             </ul>

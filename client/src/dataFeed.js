@@ -3,21 +3,47 @@
 const dataFeed = [
     {
         "index": "AboutMe",
-        "text": "Full stack web developer educated at UC Berkeley Extension and leveraging STEM background to create intuitive and easy-to-maintain web applications. I have skills across the MERN stack, and experience working in a team setting with Git to design and build original applications under a deadline. In a recent project I developed a RESTful API in a SQL database. Working with six teammates against a deadline, I developed a social media platform that allows people at a networking event to easily exchange digital business cards. I am excited to work in a team-oriented setting building, improving, and maintaining database functionality in support of front-end designers.",
+        "text": "Full stack web developer educated at UC Berkeley Extension leveraging STEM background to create intuitive and efficient web applications. Experience working in a team setting with Git and the MERN stack to design and build original applications under a deadline. Looking to work in a collaborative setting building, maintaining, and writing tests for an application code base.",
         "img": "../../assets/images/profpic.jpg"
     },
     {
         "index": "Portfolio",
         "content": [
             {
-                "title": "project 1",
-                "img": "./image.jpg",
-                "url": "https://www.google.com"
+                "title": "Look Me Up",
+                "img": "./images/look-me-up.jpg",
+                "url": "https://look-meup.herokuapp.com/",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
             },
             {
-                "title": "project 2",
-                "img": "./image2.jpg",
-                "url": "https://www.mcmaster-carr.com"
+                "title": "Dinner For You",
+                "img": "https://user-images.githubusercontent.com/89751266/146664325-27e406be-2110-4bce-bcfd-c20662d5e80d.png",
+                "url": "https://www.mcmaster-carr.com",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+            },
+            {
+                "title": "Weather Dashboard",
+                "img": "./images/bill-michaud-kPxzuiW2aGI-unsplash.jpg",
+                "url": "https://www.mcmaster-carr.com",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+            },
+            {
+                "title": "Password Generator",
+                "img": "./images/banner-g58e23b4bd_640.jpg",
+                "url": "https://www.mcmaster-carr.com",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+            },
+            {
+                "title": "Work Day Scheduler",
+                "img": "./images/puzzle-g4f5bcbaff_640.jpg",
+                "url": "https://www.mcmaster-carr.com",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+            },
+            {
+                "title": "Run Buddy",
+                "img": "./images/run-buddy.png",
+                "url": "https://www.mcmaster-carr.com",
+                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
             }
         ]
     },
