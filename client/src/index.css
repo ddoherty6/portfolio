@@ -24,9 +24,9 @@ code {
   border-radius: 5%;
 }
 
-body {
+/* body { */
   /* font-family: Arial, Helvetica, sans-serif; */
-}
+/*} */
 
 .stylebox { /*found throughout the page*/
     background-color: var(--powder-blue);
