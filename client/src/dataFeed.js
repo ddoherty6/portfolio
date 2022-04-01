@@ -11,39 +11,39 @@ const dataFeed = [
         "content": [
             {
                 "title": "Look Me Up",
-                "img": "./images/look-me-up.jpg",
+                "img": "./images/look-me-up.jpg",   
                 "url": "https://look-meup.herokuapp.com/",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "repo": "https://github.com/asadi80/look-me-up"
             },
             {
                 "title": "Dinner For You",
                 "img": "https://user-images.githubusercontent.com/89751266/146664325-27e406be-2110-4bce-bcfd-c20662d5e80d.png",
-                "url": "https://www.mcmaster-carr.com",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "url": "https://ddoherty6.github.io/dinner-for-you/",
+                "repo": "https://github.com/ddoherty6/dinner-for-you    "
             },
             {
                 "title": "Weather Dashboard",
                 "img": "./images/bill-michaud-kPxzuiW2aGI-unsplash.jpg",
-                "url": "https://www.mcmaster-carr.com",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "url": "https://ddoherty6.github.io/06-Weather-Dashboard/",
+                "repo": "https://github.com/ddoherty6/06-Weather-Dashboard"
             },
             {
                 "title": "Password Generator",
                 "img": "./images/banner-g58e23b4bd_640.jpg",
-                "url": "https://www.mcmaster-carr.com",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "url": "https://ddoherty6.github.io/03-Password-Generator/",
+                "repo": "https://github.com/ddoherty6/03-Password-Generator"
             },
             {
                 "title": "Work Day Scheduler",
                 "img": "./images/puzzle-g4f5bcbaff_640.jpg",
-                "url": "https://www.mcmaster-carr.com",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "url": "https://ddoherty6.github.io/05-Work-Day-Scheduler/",
+                "repo": "https://github.com/ddoherty6/05-Work-Day-Scheduler"
             },
             {
                 "title": "Run Buddy",
                 "img": "./images/run-buddy.png",
-                "url": "https://www.mcmaster-carr.com",
-                "repo": "https://github.com/ddoherty6/02-Professional-Portfolio/blob/main/assets/css/style.css"
+                "url": "https://ddoherty6.github.io/run-buddy/",
+                "repo": "https://github.com/ddoherty6/run-buddy"
             }
         ]
     },
