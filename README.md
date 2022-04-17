@@ -1,6 +1,6 @@
 # Dan Doherty's Portfolio
 
-Please find this portfolio [deployed](https://github.com/ddoherty6/portfolio) on GitHub pages.
+Please find this portfolio [deployed](https://ddoherty6.github.io/portfolio/) on GitHub pages.
 
 ![screenshot](./client/public/images/screenshot2.jpg)
 
