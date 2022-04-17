@@ -10,10 +10,10 @@ const dataFeed = [
         "index": "Portfolio",
         "content": [
             {
-                "title": "Look Me Up",
-                "img": "./images/look-me-up.jpg",   
-                "url": "https://look-meup.herokuapp.com/",
-                "repo": "https://github.com/asadi80/look-me-up"
+                "title": "Pump Plunder",
+                "img": "https://raw.githubusercontent.com/Afaed/Pump-Plunder/main/assets/screenshot.jpg",   
+                "url": "https://pump-plunder.herokuapp.com/",
+                "repo": "https://github.com/Afaed/Pump-Plunder"
             },
             {
                 "title": "Dinner For You",
@@ -40,10 +40,10 @@ const dataFeed = [
                 "repo": "https://github.com/ddoherty6/05-Work-Day-Scheduler"
             },
             {
-                "title": "Run Buddy",
-                "img": "./images/run-buddy.png",
-                "url": "https://ddoherty6.github.io/run-buddy/",
-                "repo": "https://github.com/ddoherty6/run-buddy"
+                "title": "Look Me Up",
+                "img": "./images/look-me-up.jpg",
+                "url": "https://look-meup.herokuapp.com/",
+                "repo": "https://github.com/asadi80/look-me-up"
             }
         ]
     },
