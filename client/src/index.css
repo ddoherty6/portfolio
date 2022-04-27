@@ -21,7 +21,6 @@ code {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border-radius: 5%;
 }
 
 /* body { */
@@ -41,7 +40,6 @@ header {
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    border-radius: 5%;
 }
 
 header .stylebox {
@@ -94,6 +92,10 @@ header nav .nav-item a {
   top: 220px;
   font-size: 36px;
   display: none;
+}
+
+main section img {
+  border-radius: 5%;
 }
 
 main {
