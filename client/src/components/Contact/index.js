@@ -16,6 +16,8 @@ function Contact() {
 
     const handleChange = function(event) {
 
+        console.log(event.target.value);
+
         // validate inputs, set error message for invalid ipnuts onChange
         if (event.target.name === 'email') {
             const isValid = validateEmail(event.target.value);
@@ -26,18 +28,18 @@ function Contact() {
                 setErrorMessage('');
             }
 
-        } else {
-            if (!event.target.value.length) {
-                setErrorMessage(`${event.target.name} is required.`);
-              } else {
-                setErrorMessage('');
-              }
-        }
+          } //else {
+        //     if (!event.target.value.length) {
+        //         setErrorMessage(`${event.target.name.charAt(0).toUpperCase() + event.target.name.slice(1)} is required.`);
+        //       } else {
+        //         setErrorMessage('');
+        //       }
+        // }
         
         // validation is successfull
-        if (!errorMessage) {
+        // if (!errorMessage) {
             setFormState({ ...formState, [event.target.name]: event.target.value });
-        }
+        // }
 
         
     }
@@ -45,6 +47,7 @@ function Contact() {
     const handleSubmit = function(event) {
         event.preventDefault();
         console.log(formState); // leaving as front-end only for now
+        console.log("click");
     }
 
     return (
