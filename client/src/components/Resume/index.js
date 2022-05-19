@@ -3,14 +3,14 @@ function Resume() {
     return (
         <main id="resume">
             <div>
-                <h1><a href="./assets/Resume.pdf" target="_blank">Resume</a></h1>
-                <h2>Front end skills</h2>
+                <h1><a href="./assets/Resume.pdf" target="_blank">Skills</a></h1>
+                <h2>Front end</h2>
                 <ul>
                     <li>HTML/CSS</li>
                     <li>Javascript/jQuery</li>
                     <li>Boostrap/Materialize</li>
                 </ul>
-                <h2>Back end skills</h2>
+                <h2>Back end</h2>
                 <ul>
                     <li>SQL and noSQL</li>
                     <li>Git/Heroku/MongoDB Atlas</li>
