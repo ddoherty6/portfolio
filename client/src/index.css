@@ -284,101 +284,101 @@ color: var(--blue-gray);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
 
-header .stylebox h1 {
-  font-size: 30px;
-}
+  header .stylebox h1 {
+    font-size: 30px;
+  }
 
-main {
-  display: block;
-  margin: 50px 10px 50px 10px;
-}
+  main {
+    display: block;
+    margin: 50px 10px 50px 10px;
+  }
 
-.indent {
-  width: 100%;
-  color: var(--blue-gray);
-  font-size: 46px;
-  border-right: white;
-  border-bottom: 5px solid var(--blue-gray);
-  padding-right: 0;
-  margin-right: 0;
-  text-align: left;
-}
+  .indent {
+    width: 100%;
+    color: var(--blue-gray);
+    font-size: 46px;
+    border-right: white;
+    border-bottom: 5px solid var(--blue-gray);
+    padding-right: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 
-.bio {
-  width: 100%;
-}
+  .bio {
+    width: 100%;
+  }
 
-.work {
-  width: 100%;
-}
+  .work {
+    width: 100%;
+  }
 
-footer {
-  display: block;
-  margin: 20px 10px 20px 10px;
-  color: var(--blue-gray);
-}
+  footer {
+    display: block;
+    margin: 20px 10px 20px 10px;
+    color: var(--blue-gray);
+  }
 
-footer .contact-info {
-  width: 100%;
-}
+  footer .contact-info {
+    width: 100%;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-header {
-  display: block;
-  height: 175px;
-}
+  header {
+    display: block;
+    height: 175px;
+  }
 
-header .stylebox {
-  height: 50%;
-  width: 50%;
-}
+  header .stylebox {
+    height: 50%;
+    width: 50%;
+  }
 
-header .stylebox h1 {
-  font-size: 40px;
-}
+  header .stylebox h1 {
+    font-size: 40px;
+  }
 
-header nav {
-  font-size: 20px;
-}
+  header nav {
+    font-size: 20px;
+  }
 
-.bio {
-  display: block;
-  text-align: center;
-}
+  .bio {
+    display: block;
+    text-align: center;
+  }
 
-.work .work-sm {
-  width: 100%;
-}
+  .work .work-sm {
+    width: 100%;
+  }
 
-footer .contact-info {
-  display: block;
-}
+  footer .contact-info {
+    display: block;
+  }
 
-footer .contact-info .contact-item {
-  width: 50%;
-}
+  footer .contact-info .contact-item {
+    width: 50%;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-header {
-  height: 400px;
-}
+  header {
+    height: 400px;
+  }
 
-header .stylebox {
-  height: 25%;
-}
+  header .stylebox {
+    height: 25%;
+  }
 
-header nav {
-  display: block;
-  text-align: center;
-}
+  header nav {
+    display: block;
+    text-align: center;
+  }
 
-.hero {
-  display: none;
-}
+  .hero {
+    display: none;
+  }
 }

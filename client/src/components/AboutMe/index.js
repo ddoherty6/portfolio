@@ -6,7 +6,7 @@ function AboutMe() {
     return (
         <main id="about-me" key="about-me">
             <div className="indent">
-                <h2>About Me</h2>
+                <h2>Dan Doherty</h2>
             </div>
 
             <section className="bio">
