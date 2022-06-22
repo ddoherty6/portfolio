@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div>
-      <Header nav={nav} setNav={setNav}/>
+      {/* <Header nav={nav} setNav={setNav}/> */}
+      <Header />
 
       <section className="hero">
             <div className="stylebox">
@@ -20,10 +21,13 @@ function App() {
         </section>
 
     
-      {nav==="AboutMe" && <AboutMe />}   
+      {/* {nav==="AboutMe" && <AboutMe />}   
       {nav==="Portfolio" && <Project />}
       {nav==="Contact" && <Contact />}
-      {nav==="Resume" && <Resume />}
+      {nav==="Resume" && <Resume />} */}
+
+      <AboutMe />
+      <Project />
 
       <Footer />
     </div>

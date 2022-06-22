@@ -4,7 +4,7 @@ function Header({ nav, setNav }) {
     return (
         <header>
             <div><h1> Dan Doherty</h1></div>
-            <Navgation nav={nav} setNav={setNav}/>
+            {/* <Navgation nav={nav} setNav={setNav}/> */}
         </header>
     );
 }

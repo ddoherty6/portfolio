@@ -11,13 +11,13 @@ const dataFeed = [
         "content": [
             {
                 "title": "Pump Plunder",
-                "img": "https://raw.githubusercontent.com/Afaed/Pump-Plunder/main/assets/screenshot.jpg",   
+                "img": "./images/pump-plunder-scrnsht.jpg",   
                 "url": "https://pump-plunder.herokuapp.com/",
                 "repo": "https://github.com/Afaed/Pump-Plunder"
             },
             {
                 "title": "Dinner For You",
-                "img": "https://user-images.githubusercontent.com/89751266/146664325-27e406be-2110-4bce-bcfd-c20662d5e80d.png",
+                "img": "./images/dinner-for-you-scrnsht.png",
                 "url": "https://ddoherty6.github.io/dinner-for-you/",
                 "repo": "https://github.com/ddoherty6/dinner-for-you    "
             },
