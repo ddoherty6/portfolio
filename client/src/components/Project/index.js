@@ -1,4 +1,5 @@
 import dataFeed from '../../dataFeed';
+import Card from 'react-bootstrap/Card'
 //import pic from '../../assets/images/look-me-up.jpg';
 const projects = dataFeed[1].content;
 //import images[i] from `${projects[i].img}`;
@@ -15,17 +16,14 @@ function Project() {
             </div>
             <section id="portfolio" className="work">
                 {projects.map((project, i) => (
-                    <article key={i} className={`${i===0 || i===1 ? "work-lg" : "work-sm"}`}>
-                        <a href={project.url} target="_blank">
-                            <img src={project.img} alt=""/>
-                            <div className="stylebox">
-                                <h4>{project.title}</h4>
-                                <p>
-                                    <a href={project.url} target="_blank">deployment </a>
-                                    <a href={project.repo} target="_blank"> repo</a></p>
-                            </div>
-                        </a>
-                    </article>
+                    <Card key={i} className={`${i===0 || i===1 ? "work-lg" : "work-sm"}`}>
+                        <Card.Img src={project.img} alt=""/>
+                        <Card.Body>
+                            <Card.Title>{project.title}</Card.Title>
+                            <Card.Link href={project.url}>deployment</Card.Link>
+                            <Card.Link href={project.repo}>repo</Card.Link>
+                        </Card.Body>
+                    </Card>
                 ))}
             </section>
         </main>

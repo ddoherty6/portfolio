@@ -11,9 +11,9 @@ function App() {
    const [nav, setNav] = useState("AboutMe");
 
   return (
-    <div>
+    <div >
       {/* <Header nav={nav} setNav={setNav}/> */}
-      <Header />
+      
 
       {/* <section className="hero">
             <div className="stylebox">
@@ -28,7 +28,10 @@ function App() {
       {nav==="Resume" && <Resume />} */}
 
 
-      <Container>
+      <Container fluid style={{
+      backgroundColor: "#6a87ab"
+      }}>
+        <Header />
         <AboutMe />
         <Project />
         <Footer />
