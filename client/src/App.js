@@ -6,7 +6,7 @@ function App() {
    const [nav, setNav] = useState("AboutMe");
 
   return (
-    <div >
+    <div>
       {/* <Header nav={nav} setNav={setNav}/> */}
       
 
@@ -23,9 +23,7 @@ function App() {
       {nav==="Resume" && <Resume />} */}
 
 
-      <Container fluid style={{
-      backgroundColor: "#6a87ab"
-      }}>
+      <Container fluid>
        <Cards />
       </Container>
       

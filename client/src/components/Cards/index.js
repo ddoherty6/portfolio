@@ -1,7 +1,7 @@
 import data from '../../data';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-import './style.css'
+import './style.css';
 
 function Cards() {
     return (

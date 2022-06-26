@@ -1,9 +1,8 @@
-.row {
-    flex-wrap: wrap;
+.card {
+    width: auto;
+    margin: 1%;
 }
 
-
-.card {
+.card-img {
     width: 300px;
-    margin: 1%;
 }
