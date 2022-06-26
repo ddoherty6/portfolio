@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Project from './components/Project';
-// import Contact from './components/Contact';
-// import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Cards from './components/Cards';
 import Container from 'react-bootstrap/Container';
 
 function App() {
@@ -31,10 +26,7 @@ function App() {
       <Container fluid style={{
       backgroundColor: "#6a87ab"
       }}>
-        <Header />
-        <AboutMe />
-        <Project />
-        <Footer />
+       <Cards />
       </Container>
       
 
