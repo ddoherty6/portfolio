@@ -4,8 +4,8 @@ import './style.css';
 
 function Cards({cardInfo}) {
     return (
-        <Card>
-            {/* <Card.Img src={cardInfo.img} alt=""/> */}
+        <Card className="col-3">
+            <Card.Img src={cardInfo.img} alt=""/>
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
                 {/* <Card.Text>{cardInfo.text}</Card.Text> */}

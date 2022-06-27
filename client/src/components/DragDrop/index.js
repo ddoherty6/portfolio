@@ -7,9 +7,13 @@ function DragDrop() {
     return (
         <Row>
             <Col className="dropBoard col-3"></Col>
-            <Col className="dragPool"> {data.map((datum, i) => {
-                return <Cards key={i} cardInfo={datum}/>;
-            })} </Col>
+            <Col className="dragPool col-9">
+                <Row>
+                    {data.map((datum, i) => {
+                        return <Cards key={i} cardInfo={datum}/>; 
+                    })} 
+                </Row>
+            </Col>
         </Row>
     );
 }
