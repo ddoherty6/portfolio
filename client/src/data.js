@@ -3,6 +3,7 @@
 const data = [
     {
         "id": "0",
+        "active": "false",
         "title": "Dan Doherty",
         "text": "Full stack web developer educated at UC Berkeley Extension leveraging STEM background to create intuitive and efficient web applications. Experience working in a team setting with Git and the MERN stack to design and build original applications under a deadline. Looking to work in a collaborative setting building, maintaining, and writing tests for an application code base.",
         "img": "../../assets/images/profpic.jpg",
@@ -11,6 +12,7 @@ const data = [
     },
     {
         "id": "1",
+        "active": "false",
         "title": "Pump Plunder",
         "text": "",
         "img": "./images/pump-plunder-scrnsht.jpg",   
@@ -19,6 +21,7 @@ const data = [
     },
     {
         "id": "2",
+        "active": "false",
         "title": "Dinner For You",
         "text": "",
         "img": "./images/dinner-for-you-scrnsht.png",
@@ -27,6 +30,7 @@ const data = [
     },
     {
         "id": "3",
+        "active": "false",
         "title": "Weather Dashboard",
         "text": "",
         "img": "./images/bill-michaud-kPxzuiW2aGI-unsplash.jpg",
@@ -35,6 +39,7 @@ const data = [
     },
     {
         "id": "4",
+        "active": "false",
         "title": "Password Generator",
         "text": "",
         "img": "./images/banner-g58e23b4bd_640.jpg",
@@ -43,6 +48,7 @@ const data = [
     },
     {
         "id": "5",
+        "active": "false",
         "title": "Work Day Scheduler",
         "text": "",
         "img": "./images/puzzle-g4f5bcbaff_640.jpg",
@@ -51,6 +57,7 @@ const data = [
     },
     {
         "id": "6",
+        "active": "false",
         "title": "Look Me Up",
         "text": "",
         "img": "./images/look-me-up.jpg",
@@ -59,6 +66,7 @@ const data = [
     },
     {
         "id": "7",
+        "active": "false",
         "title": "Contact",
         "text": "", // placeholder for future data
         "img": "",
@@ -67,6 +75,7 @@ const data = [
     },
     {
         "id": "8",
+        "active": "false",
         "title": "Skills",
         "text": "", // placeholder for future data
         "img": "",
