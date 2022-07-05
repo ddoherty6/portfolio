@@ -7,33 +7,25 @@ import { useDrop } from 'react-dnd';
 
 function DragDrop() {
 
-    // useEffect(() => {
-    //     // split data from backend into an array - 0 index is card pool, 1 index is active card
-    //     console.log("inUseEffect");
-    //     cardStateParsed = [data, {}];
-    //     console.log(cardStateParsed);
-    // }, []);
-
-    
-
-    const [cardState, setCardState] = useState(data);
-
-    const findIndex = function(id) {
-        for (var i = 0; i < data.length; i++) {
-            if(id === data[i].id) {
-                return i;
-            }
-        }
-    }
+    const [cardState, setCardState] = useState([data, []]);
 
     const changeBoard = (id) => {
-      
-        const newData = cardState;
-        newData[findIndex(id)].active = true; 
 
-        setCardState(newData);
+        var newState = cardState;
 
-        console.log(cardState);
+        if(newState[1].length === 0) {
+            // if there is no element in newState[1] (active board), add selected element
+            newState[1].push(newState[0][id]);
+            newState[0].splice(id, 1);
+            
+        } else {
+            // if there is an element in newState[1] (active board), remove it, add selected element, remove selected element from dragPool, the add removed element back to dragPool
+            const popTest = newState[1].pop();
+            newState[1].push(newState[0][id]);
+            newState[0].splice(id, 1);
+            newState[0].push(popTest);
+        }
+        setCardState(newState);
     }
 
     const [{ isOver }, drop] = useDrop(() => ({
@@ -44,24 +36,17 @@ function DragDrop() {
         }),
     }))
 
-    const activeCards = function() {
-        return cardState.filter(card => card.active === true);
-    }
-
-    const inactiveCards = function() {
-        return cardState.filter(card => card.active === "false");
-    }
-
     return (
         <Row>
             <Col ref={drop} className="dropBoard col-3">
-                {activeCards().map((card, i) => {
+                <p>drag stuff here</p>
+                {cardState[1].map((card, i) => {
                     return <Cards key={i} cardInfo={card} cardType={"board"}/>;
                 })}
             </Col>
             <Col className="dragPool col-9">
                 <Row>
-                    {inactiveCards().map((card, i) => {
+                    {cardState[0].map((card, i) => {
                         return <Cards key={i} cardInfo={card} cardType={"pool"}/>; 
                     })} 
                 </Row>
