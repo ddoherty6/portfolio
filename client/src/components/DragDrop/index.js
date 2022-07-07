@@ -20,10 +20,10 @@ function DragDrop() {
             
         } else {
             // if there is an element in newState[1] (active board), remove it, add selected element, remove selected element from dragPool, the add removed element back to dragPool
-            const popTest = newState[1].pop();
+            const pop = newState[1].pop();
             newState[1].push(newState[0][id]);
             newState[0].splice(id, 1);
-            newState[0].push(popTest);
+            newState[0].push(pop);
         }
         setCardState(newState);
     }
