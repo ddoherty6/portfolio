@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import Cards from '../Cards';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import data from '../../data'; // simulating object that could be drawn from a future back end
 import { useDrop } from 'react-dnd';
+//import data from '../../data'; // simulating object that could be drawn from a future back end
 
-function DragDrop() {
-
+function DragDrop({ data }) {
+    
     const [cardState, setCardState] = useState([data, []]);
 
     const changeBoard = (id) => {
@@ -25,6 +25,7 @@ function DragDrop() {
             newState[0].splice(id, 1);
             newState[0].push(pop);
         }
+
         setCardState(newState);
     }
 
@@ -37,14 +38,14 @@ function DragDrop() {
     }))
 
     return (
-        <Row>
-            <Col ref={drop} className="dropBoard col-3">
-                <p>drag stuff here</p>
+        <Row>               
+            <Col ref={drop} className="dropBoard col-4">
+                {cardState[1].length === 0 ? <p>drag stuff here</p> : ""}
                 {cardState[1].map((card, i) => {
                     return <Cards key={i} cardInfo={card} cardType={"board"}/>;
                 })}
             </Col>
-            <Col className="dragPool col-9">
+            <Col className="dragPool col-8">
                 <Row>
                     {cardState[0].map((card, i) => {
                         return <Cards key={i} cardInfo={card} cardType={"pool"}/>; 

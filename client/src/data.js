@@ -6,7 +6,7 @@ const data = [
         "active": "false",
         "title": "Dan Doherty",
         "text": "Full stack web developer educated at UC Berkeley Extension leveraging STEM background to create intuitive and efficient web applications. Experience working in a team setting with Git and the MERN stack to design and build original applications under a deadline. Looking to work in a collaborative setting building, maintaining, and writing tests for an application code base.",
-        "img": "../../assets/images/profpic.jpg",
+        "img": "./images/profpic.jpg",
         "url": "https://pump-plunder.herokuapp.com/",
         "repo": "https://github.com/Afaed/Pump-Plunder"
     },

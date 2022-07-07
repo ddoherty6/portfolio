@@ -1,39 +1,54 @@
 import React from 'react';
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import Row from 'react-bootstrap/Row';
+import Cards from './components/Cards';
 import DragDrop from './components/DragDrop';
-import Container from 'react-bootstrap/Container';
+import data from './data'; // simulating object that could be drawn from a future back end
 
 function App() {
-  //  const [nav, setNav] = useState("AboutMe");
 
+  const [screenSize, setScreenSize] = React.useState(0);
+
+    const updateMedia = () => {
+        var screenInt = 0;
+
+        if(window.innerWidth < 450) {
+          screenInt = 0;
+        } else if(window.innerWidth > 450 && window.innerWidth < 850) {
+          screenInt = 1;
+        } else {
+          screenInt = 2;
+        }
+        setScreenSize(screenInt);
+    };
+    
+    React.useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    });
+  
   return (
     <DndProvider backend={HTML5Backend}>
       <div>
-        {/* <Header nav={nav} setNav={setNav}/> */}
-        
-
-        {/* <section className="hero">
-              <div className="stylebox">
-                  <h3>Always Send It.</h3>
-              </div>
-          </section> */}
-
-      
-        {/* {nav==="AboutMe" && <AboutMe />}   
-        {nav==="Portfolio" && <Project />}
-        {nav==="Contact" && <Contact />}
-        {nav==="Resume" && <Resume />} */}
-
-
-        
-        <DragDrop />
        
-       
+        {screenSize === 2 ? 
+          <DragDrop data={data}/>
+        : ""}
+        <Row>
+          {screenSize === 1 ? 
+            data.map((card, i) => {
+              return <Cards key={i} cardInfo={card} cardType={"pool"}/>;
+            })
+          : ""}
+          {screenSize === 0 ? 
+            data.map((card, i) => {
+              return <Cards key={i} cardInfo={card} cardType={"board"}/>;
+            })
+          : ""}
+        </Row>
 
-        
 
-        
       </div>
     </DndProvider>
   );
