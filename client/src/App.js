@@ -19,16 +19,6 @@ function App() {
     }
   }
 
-  // React.useEffect(() => {
-  //   if(window.innerWidth < 450) {
-  //     initState = 0;
-  //   } else if(window.innerWidth > 450 && window.innerWidth < 850) {
-  //     initState = 1;
-  //   } else {
-  //     initState = 2;
-  //   }
-  // }, []);
-
   const [screenSize, setScreenSize] = React.useState(initState());
 
   const updateMedia = () => {
@@ -56,19 +46,23 @@ function App() {
         {screenSize === 2 ? 
           <DragDrop data={data}/>
         : ""}
-        <Row>
-          {screenSize === 1 ? 
-            data.map((card, i) => {
-              return <Cards key={i} cardInfo={card} cardType={"pool"}/>;
-            })
-          : ""}
-          {screenSize === 0 ? 
-            data.map((card, i) => {
-              return <Cards key={i} cardInfo={card} cardType={"board"}/>;
-            })
-          : ""}
-        </Row>
 
+        
+        {screenSize === 1 ? 
+          data.map((card, i) => {
+            return (
+              <Row>
+                
+                <Cards key={i} cardInfo={card} cardType={"tablet"}/>
+              </Row>);
+          })
+        : ""}
+        {screenSize === 0 ? 
+          data.map((card, i) => {
+            return <Cards key={i} cardInfo={card} cardType={"board"}/>;
+          })
+        : ""}
+        
 
       </div>
     </DndProvider>

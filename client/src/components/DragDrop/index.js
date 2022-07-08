@@ -39,14 +39,18 @@ function DragDrop({ data }) {
 
     return (
         <Row>               
-            <Col ref={drop} className="dropBoard col-4">
-                {cardState[1].length === 0 ? <p>drag stuff here</p> : ""}
-                {cardState[1].map((card, i) => {
-                    return <Cards key={i} cardInfo={card} cardType={"board"}/>;
-                })}
+            <Col ref={drop} className="vh-100 dropBoard col-4">
+                <Row>
+                    {cardState[1].length === 0 ? <p>drag stuff here</p> : ""}    
+                </Row>
+                <Row>
+                    {cardState[1].map((card, i) => {
+                        return <Cards key={i} cardInfo={card} cardType={"board"}/>;
+                    })}
+                </Row>
             </Col>
             <Col className="dragPool col-8">
-                <Row>
+                <Row className="vh-100">
                     {cardState[0].map((card, i) => {
                         return <Cards key={i} cardInfo={card} cardType={"pool"}/>; 
                     })} 
