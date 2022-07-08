@@ -8,25 +8,46 @@ import data from './data'; // simulating object that could be drawn from a futur
 
 function App() {
 
-  const [screenSize, setScreenSize] = React.useState(0);
-
-    const updateMedia = () => {
-        var screenInt = 0;
-
-        if(window.innerWidth < 450) {
-          screenInt = 0;
-        } else if(window.innerWidth > 450 && window.innerWidth < 850) {
-          screenInt = 1;
-        } else {
-          screenInt = 2;
-        }
-        setScreenSize(screenInt);
-    };
+  const initState = function() {
     
-    React.useEffect(() => {
-        window.addEventListener("resize", updateMedia);
-        return () => window.removeEventListener("resize", updateMedia);
-    });
+    if(window.innerWidth < 450) {
+      return 0;
+    } else if(window.innerWidth > 450 && window.innerWidth < 850) {
+      return 1;
+    } else {
+      return 2;
+    }
+  }
+
+  // React.useEffect(() => {
+  //   if(window.innerWidth < 450) {
+  //     initState = 0;
+  //   } else if(window.innerWidth > 450 && window.innerWidth < 850) {
+  //     initState = 1;
+  //   } else {
+  //     initState = 2;
+  //   }
+  // }, []);
+
+  const [screenSize, setScreenSize] = React.useState(initState());
+
+  const updateMedia = () => {
+      var screenInt = 0;
+
+      if(window.innerWidth < 450) {
+        screenInt = 0;
+      } else if(window.innerWidth > 450 && window.innerWidth < 850) {
+        screenInt = 1;
+      } else {
+        screenInt = 2;
+      }
+      setScreenSize(screenInt);
+  };
+  
+  React.useEffect(() => {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+  });
   
   return (
     <DndProvider backend={HTML5Backend}>
