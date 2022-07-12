@@ -1,6 +1,8 @@
-.dropBoard {
+
+
+/* .dropBoard {
   border: 2px solid black;
-}
+} */
 
 /* body {
   margin: 0;
@@ -19,13 +21,14 @@ code {
 /* :root {
   --blue-gray: #394155;
   --powder-blue: #67d0e2;
-}
+} */
 
 * {
-  box-sizing: border-box;
+  background-color:darkslategrey;
+  /* box-sizing: border-box;
   margin: 0;
-  padding: 0;
-} */
+  padding: 0; */
+}
 
 /* body { */
   /* font-family: Arial, Helvetica, sans-serif; */

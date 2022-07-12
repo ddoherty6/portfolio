@@ -38,19 +38,19 @@ function DragDrop({ data }) {
     }))
 
     return (
-        <Row>               
-            <Col ref={drop} className="vh-100 dropBoard col-4">
+        <Row className="vh-100">               
+            <Col ref={drop} className="dropBoard col-4">
                 <Row>
                     {cardState[1].length === 0 ? <p>drag stuff here</p> : ""}    
                 </Row>
-                <Row>
+                <Row className="h-100">
                     {cardState[1].map((card, i) => {
                         return <Cards key={i} cardInfo={card} cardType={"board"}/>;
                     })}
                 </Row>
             </Col>
             <Col className="dragPool col-8">
-                <Row className="vh-100">
+                <Row className="h-100">
                     {cardState[0].map((card, i) => {
                         return <Cards key={i} cardInfo={card} cardType={"pool"}/>; 
                     })} 

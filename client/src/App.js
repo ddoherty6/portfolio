@@ -3,6 +3,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Row from 'react-bootstrap/Row';
 import Cards from './components/Cards';
+import Container from 'react-bootstrap/Container';
 import DragDrop from './components/DragDrop';
 import data from './data'; // simulating object that could be drawn from a future back end
 
@@ -41,7 +42,7 @@ function App() {
   
   return (
     <DndProvider backend={HTML5Backend}>
-      <div>
+      <Container fluid>
        
         {screenSize === 2 ? 
           <DragDrop data={data}/>
@@ -52,7 +53,6 @@ function App() {
           data.map((card, i) => {
             return (
               <Row>
-                
                 <Cards key={i} cardInfo={card} cardType={"tablet"}/>
               </Row>);
           })
@@ -64,7 +64,7 @@ function App() {
         : ""}
         
 
-      </div>
+      </Container>
     </DndProvider>
   );
 }
