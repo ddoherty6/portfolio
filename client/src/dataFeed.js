@@ -10,22 +10,22 @@ const dataFeed = [
         "index": "Portfolio",
         "content": [
             {
-                "title": "Pump Plunder",
-                "img": "./images/pump-plunder-scrnsht.jpg",   
-                "url": "https://pump-plunder.herokuapp.com/",
-                "repo": "https://github.com/Afaed/Pump-Plunder"
-            },
+                "title": "Bayview Senior Services",
+                "img": "./images/bayview-screenshot.jpg",
+                "url": "https://ddoherty6.github.io/bayview-senior-services/",
+                "repo": "https://github.com/ddoherty6/bayview-senior-services/tree/gh-pages"
+            },           
             {
                 "title": "Dinner For You",
                 "img": "./images/dinner-for-you-scrnsht.png",
                 "url": "https://ddoherty6.github.io/dinner-for-you/",
-                "repo": "https://github.com/ddoherty6/dinner-for-you    "
+                "repo": "https://github.com/ddoherty6/dinner-for-you"
             },
             {
-                "title": "Weather Dashboard",
-                "img": "./images/bill-michaud-kPxzuiW2aGI-unsplash.jpg",
-                "url": "https://ddoherty6.github.io/06-Weather-Dashboard/",
-                "repo": "https://github.com/ddoherty6/06-Weather-Dashboard"
+                "title": "Pump Plunder",
+                "img": "./images/pump-plunder-scrnsht.jpg",   
+                "url": "https://pump-plunder.herokuapp.com/",
+                "repo": "https://github.com/Afaed/Pump-Plunder"
             },
             {
                 "title": "Password Generator",
