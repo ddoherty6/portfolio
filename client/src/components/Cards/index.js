@@ -1,5 +1,9 @@
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'
 import { useDrag } from 'react-dnd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './style.css';
 
@@ -20,8 +24,14 @@ function Cards({cardInfo, cardType}) {
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
                 {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
-                <Card.Link href={cardInfo.url}>deployment</Card.Link>
-                <Card.Link href={cardInfo.repo}>repo</Card.Link>
+                <Button href={cardInfo.url}>
+                    <FontAwesomeIcon icon={faLink}/>
+                    deployment
+                </Button>
+                <Button href={cardInfo.repo}>
+                    <FontAwesomeIcon icon={faGithub}/>
+                    repo
+                </Button>
             </Card.Body>
         </Card>
     );
