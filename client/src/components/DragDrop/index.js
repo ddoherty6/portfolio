@@ -38,7 +38,7 @@ function DragDrop({ data }) {
     }))
 
     return (
-        <Row className="vh-100">               
+        <Row className="mt-3 vh-100">               
             <Col ref={drop} className="dropBoard col-4">
                 <Row>
                     {cardState[1].length === 0 ? <p>drag stuff here</p> : ""}    

@@ -19,19 +19,16 @@ function Cards({cardInfo, cardType}) {
     }));
 
     return (
-        <Card ref={drag} className={cardType==="board" ? "p-2 justify-content-around" : "p-2 justify-content-around col-4"}>
+        <Card ref={drag} className={cardType==="board" ? "p-2 justify-content-around" : "justify-content-around col-4"}>
             {cardType==="board" || cardType==="tablet" && cardInfo.img!=undefined ? <Card.Img src={cardInfo.img} alt=""/> : ""}
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
-                {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
+                {/* {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""} */}
+                <Card.Text>{cardInfo.text}</Card.Text>
                 <Button href={cardInfo.url}>
-                    <FontAwesomeIcon icon={faLink}/>
-                    deployment
-                </Button>
+                    <FontAwesomeIcon icon={faLink}/> link</Button>
                 <Button href={cardInfo.repo}>
-                    <FontAwesomeIcon icon={faGithub}/>
-                    repo
-                </Button>
+                    <FontAwesomeIcon icon={faGithub}/> repo</Button>
             </Card.Body>
         </Card>
     );

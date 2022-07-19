@@ -24,6 +24,7 @@ function App() {
 
   const updateMedia = () => {
       var screenInt = 0;
+      console.log(window.innerWidth);
 
       if(window.innerWidth < 450) {
         screenInt = 0;
@@ -50,12 +51,13 @@ function App() {
 
         
         {screenSize === 1 ? 
-          data.map((card, i) => {
-            return (
-              <Row>
-                <Cards key={i} cardInfo={card} cardType={"tablet"}/>
-              </Row>);
-          })
+          <Row>
+            {data.map((card, i) => {
+              return (
+                  <Cards key={i} cardInfo={card} cardType={"tablet"}/>
+                );
+            })}
+          </Row>
         : ""}
         {screenSize === 0 ? 
           data.map((card, i) => {
