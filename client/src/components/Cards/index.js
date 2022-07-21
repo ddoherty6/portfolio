@@ -23,11 +23,11 @@ function Cards({cardInfo, cardType}) {
             {cardType==="board" || cardType==="tablet" && cardInfo.img!=undefined ? <Card.Img src={cardInfo.img} alt=""/> : ""}
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
-                {/* {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""} */}
-                <Card.Text>{cardInfo.text}</Card.Text>
-                <Button href={cardInfo.url}>
+                {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
+                {/* <Card.Text>{cardInfo.text}</Card.Text> */}
+                <Button href={cardInfo.url} target={"_blank"}>
                     <FontAwesomeIcon icon={faLink}/> link</Button>
-                <Button href={cardInfo.repo}>
+                <Button href={cardInfo.repo} target={"_blank"}>
                     <FontAwesomeIcon icon={faGithub}/> repo</Button>
             </Card.Body>
         </Card>

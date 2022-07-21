@@ -31,11 +31,11 @@ const data = [
     {
         "id": "3",
         "active": "false",
-        "title": "Weather Dashboard",
+        "title": "Bayview Senior Services",
         "text": "",
-        "img": "./images/bill-michaud-kPxzuiW2aGI-unsplash.jpg",
-        "url": "https://ddoherty6.github.io/06-Weather-Dashboard/",
-        "repo": "https://github.com/ddoherty6/06-Weather-Dashboard"
+        "img": "./images/bayview-screenshot.jpg",
+        "url": "https://ddoherty6.github.io/bayview-senior-services/",
+        "repo": "https://github.com/ddoherty6/bayview-senior-services/tree/gh-pages"
     },
     {
         "id": "4",
