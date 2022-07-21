@@ -18,9 +18,6 @@ function Footer() {
                     <div><a href="https://github.com/ddoherty6">GitHub</a></div>
                 </div>
                 <div className="contact-item">
-                    <div><a href="https://twitter.com/dandohertyVI">Twitter</a></div>
-                </div>
-                <div className="contact-item">
                     <div><a href="https://open.spotify.com/artist/6buAUKLPnsFb2JIKcwusng">Spotify</a></div>
                 </div>
                 
