@@ -24,6 +24,7 @@ function Cards({cardInfo, cardType}) {
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
                 {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
+                {cardType==="pool" || cardType==="tablet" ? <Card.Subtitle>{cardInfo.subtitle}</Card.Subtitle> : ""}
                 {/* <Card.Text>{cardInfo.text}</Card.Text> */}
                 <Button href={cardInfo.url} target={"_blank"}>
                     <FontAwesomeIcon icon={faLink}/> link</Button>
