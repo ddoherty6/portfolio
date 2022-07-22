@@ -13,6 +13,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.card-subtitle {
+    margin: 5%;
+}
+
 .btn {
     border: 5px solid;
     border-image-slice: 1;

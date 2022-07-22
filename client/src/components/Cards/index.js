@@ -23,7 +23,8 @@ function Cards({cardInfo, cardType}) {
             {cardType==="board" || cardType==="tablet" && cardInfo.img!=undefined ? <Card.Img src={cardInfo.img} alt=""/> : ""}
             <Card.Body>
                 <Card.Title>{cardInfo.title}</Card.Title>
-                {cardType==="board" || cardType==="tablet" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
+                {cardType==="board" ? <Card.Text>{cardInfo.text}</Card.Text> : ""}
+                {cardType==="pool" || cardType==="tablet" ? <Card.Subtitle>{cardInfo.subtitle}</Card.Subtitle> : ""}
                 {/* <Card.Text>{cardInfo.text}</Card.Text> */}
                 <Button href={cardInfo.url} target={"_blank"}>
                     <FontAwesomeIcon icon={faLink}/> link</Button>
