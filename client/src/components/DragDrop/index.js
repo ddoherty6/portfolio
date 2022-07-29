@@ -45,15 +45,23 @@ function DragDrop({ data }) {
                 </Row>
                 <Row className="h-100">
                     {cardState[1].map((card, i) => {
-                        return <Cards key={i} cardInfo={card} cardType={"board"}/>;
-                    })}
+                            return <Cards key={i} cardInfo={card} cardType={"board"}/>;
+                        })
+                    }
                 </Row>
             </Col>
             <Col className="dragPool col-8">
                 <Row className="h-100">
-                    {cardState[0].map((card, i) => {
-                        return <Cards key={i} cardInfo={card} cardType={"pool"}/>; 
-                    })} 
+                    {cardState[1].length === 1 ? 
+                        // IF there is a card in the drag Pool (the single active card), print all remaining cards to the board
+                        cardState[0].map((card, i) => {
+                            return <Cards key={i} cardInfo={card} cardType={"pool"}/>;
+                        }) :
+                        // ELSE remove last card (music link) and print cards
+                        cardState[0].slice(0,-1).map((card, i) => {
+                            return <Cards key={i} cardInfo={card} cardType={"pool"}/>;
+                        })
+                    }
                 </Row>
             </Col>
         </Row>

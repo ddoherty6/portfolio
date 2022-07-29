@@ -24,8 +24,7 @@ function App() {
 
   const updateMedia = () => {
       var screenInt = 0;
-      console.log(window.innerWidth);
-
+      
       if(window.innerWidth < 450) {
         screenInt = 0;
       } else if(window.innerWidth > 450 && window.innerWidth < 850) {

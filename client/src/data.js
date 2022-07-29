@@ -5,7 +5,7 @@ const data = [
         "id": "0",
         "active": "false",
         "title": "Dan Doherty",
-        "subtitle": "More about Dan Doherty. The developer. The musician. Lover of waffles. The man with contact info ready to work.",
+        "subtitle": "More about Dan Doherty.",
         "text": "Full stack web developer educated at UC Berkeley Extension leveraging STEM background to create intuitive and efficient web applications. Experience working in a team setting with Git and the MERN stack to design and build original applications under a deadline. Looking to work in a collaborative setting building, maintaining, and writing tests for an application code base.",
         "img": "./images/profpic.jpg",
         "url": "https://www.linkedin.com/in/ddoherty6/",
@@ -70,13 +70,14 @@ const data = [
         "img": "./images/look-me-up.jpg",
         "url": "https://look-meup.herokuapp.com/",
         "repo": "https://github.com/asadi80/look-me-up"
-    },
+    }
+    ,
     {
         "id": "7",
         "active": "false",
         "title": "Contact",
-        "subtitle": "Find out how to get a hold of Dan Doherty.",
-        "text": "Hit me up at 617 823 8674. I'm also probably on discord playing Rocket League. Reach out if you're a gold 1 :)",
+        "subtitle": "Find out how to get a hold of Dan Doherty. Phone, Email, LinkedIn",
+        "text": "617 823 8674. I'm also probably on discord playing Rocket League. Reach out if you're a gold 1 :)",
         "img": "",
         "url": "https://www.linkedin.com/in/ddoherty6/",
         "repo": "https://github.com/ddoherty6"
@@ -89,6 +90,16 @@ const data = [
         "text": "Git, HTML, CSS, Javascript, MongoDB, Express, React, Node, SQL, Jest",
         "img": "",
         "url": "https://www.linkedin.com/in/ddoherty6/",
+        "repo": "https://github.com/ddoherty6"
+    },
+    {
+        "id": "9",
+        "active": "false",
+        "title": "Music",
+        "subtitle": "Links to Dan's recent band, Rocktar.",
+        "text": "Good morning. We're Rocktar. Rocktar?",
+        "img": "./images/RockTar (1).jpg",
+        "url": "https://open.spotify.com/artist/6buAUKLPnsFb2JIKcwusng",
         "repo": "https://github.com/ddoherty6"
     }
 ]
